@@ -1,0 +1,142 @@
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    margin: 0;
+    background: #f7f9fb;
+    color: #222;
+}
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.7rem 2rem;
+}
+.nav-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1e88e5;
+    letter-spacing: 1px;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.2rem;
+    margin: 0;
+    padding: 0;
+}
+.nav-links li a {
+    text-decoration: none;
+    color: #222;
+    font-weight: 500;
+    transition: color 0.2s;
+    padding: 0.3rem 0.7rem;
+    border-radius: 4px;
+}
+.nav-links li a.active, .nav-links li a:hover {
+    background: #e3f2fd;
+    color: #1976d2;
+}
+main {
+    max-width: 900px;
+    margin: 2.5rem auto 1.5rem auto;
+    padding: 0 1.5rem;
+}
+.section {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(30,136,229,0.07);
+    margin-bottom: 2rem;
+    padding: 2rem 1.5rem 1.5rem 1.5rem;
+}
+.section h2 {
+    color: #1976d2;
+    margin-top: 0;
+    margin-bottom: 1.2rem;
+    font-size: 1.45rem;
+}
+.profile-card {
+    text-align: center;
+    padding-bottom: 1.2rem;
+}
+.profile-card h1 {
+    margin: 0 0 0.3rem 0;
+    font-size: 2.2rem;
+    color: #1976d2;
+}
+.subtitle {
+    color: #555;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+.contact-info {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.2rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    font-size: 1rem;
+}
+.objective {
+    font-size: 1.05rem;
+    color: #333;
+    margin-bottom: 0;
+}
+.edu-card, .project-card, .internship-card, .certifications {
+    margin-bottom: 1.3rem;
+}
+.edu-card h3, .project-card h4, .internship-card h4, .certifications h4 {
+    margin: 0 0 0.2rem 0;
+    color: #1565c0;
+}
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 1.3rem;
+}
+.softskills-list, .strengths-list, .personal-list {
+    list-style: disc inside;
+    padding-left: 1rem;
+    margin: 0;
+}
+.contact-block {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+.signature {
+    font-style: italic;
+    color: #555;
+    text-align: right;
+}
+footer {
+    text-align: center;
+    padding: 1.2rem 0 0.7rem 0;
+    color: #888;
+    font-size: 0.95rem;
+}
+@media (max-width: 700px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0.7rem 1rem;
+    }
+    .nav-links {
+        flex-wrap: wrap;
+        gap: 0.7rem;
+    }
+    main {
+        padding: 0 0.3rem;
+    }
+    .section {
+        padding: 1.1rem 0.7rem 0.8rem 0.7rem;
+    }
+    .profile-card h1 {
+        font-size: 1.45rem;
+    }
+}
